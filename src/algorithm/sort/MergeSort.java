@@ -27,6 +27,7 @@ public class MergeSort {
 			}
 		}
 	}
+	
 	public static void mergeSort(int[] A,int begin,int end) {//递归合并子数组
 		if(begin<end) {//begin小于end说明此数组大于两个元素，可以继续划分
 			int middle = (begin+end)/2 ; //计算划分的位置，一般从中间划分
