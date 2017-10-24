@@ -34,11 +34,13 @@ public class MergeSort {
 			mergeSort(A,begin,middle) ;//对左半部分继续划分
 			mergeSort(A,middle+1,end) ;//对右半部分继续划分
 			merge(A,begin,middle,end) ;//合并
+			//+++++++++++++演示输出代码++++++++++++++++++++++++
 			System.out.print("第" + ++count + "次合并");
 			for(int i=begin;i<=end;i++) {
 				System.out.print(A[i]);
 			}
 			System.out.println();
+			//+++++++++++++演示输出代码++++++++++++++++++++++++
 		}
 	}
 	public static void main(String[] args) {
